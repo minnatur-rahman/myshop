@@ -20,5 +20,24 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
+
+
 //___Admin Dashboard Route Without Admin Group___//
-Route::get('/admin/dashboard',[AdminController::class, 'Index']);
+Route::middleware(['auth', 'admin'])->group(function () {
+
+    Route::controller(AdminController::class)->group(function () {
+        Route::get('/admin/dashboard','Index');
+    });
+
+
+
+
+
+
+
+
+
+});
+
+
+
