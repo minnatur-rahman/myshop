@@ -7,19 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Skydash Admin</title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="vendors/feather/feather.css">
-    <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
-    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="{{ url('admin/vendors/feather/feather.css') }}">
+    <link rel="stylesheet" href="{{ url('admin/vendors/ti-icons/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ url('admin/vendors/css/vendor.bundle.base.css') }}">
     <!-- endinject -->
     <!-- Plugin css for this page -->
-    <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
-    <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
-    <link rel="stylesheet" type="text/css" href="js/select.dataTables.min.css">
+    <link rel="stylesheet" href="{{ url('admin/vendors/datatables.net-bs4/dataTables.bootstrap4.css') }}">
+    <link rel="stylesheet" href="{{ url('admin/vendors/ti-icons/css/themify-icons.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url('admin/js/select.dataTables.min.css') }}">
     <!-- End plugin css for this page -->
     <!-- inject:css -->
-    <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+    <link rel="stylesheet" href="{{ url('admin/css/vertical-layout-light/style.css') }}">
     <!-- endinject -->
-    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="shortcut icon" href="{{ url('admin/images/favicon.png') }}"/>
 </head>
 
 <body>
@@ -152,7 +152,7 @@
                         </div>
                         <ul class="chat-list">
                             <li class="list active">
-                                <div class="profile"><img src="images/faces/face1.jpg" alt="image"><span
+                                <div class="profile"><img src="{{ url('admin/images/faces/face1.jpg') }}" alt="image"><span
                                         class="online"></span></div>
                                 <div class="info">
                                     <p>Thomas Douglas</p>
@@ -161,7 +161,7 @@
                                 <small class="text-muted my-auto">19 min</small>
                             </li>
                             <li class="list">
-                                <div class="profile"><img src="images/faces/face2.jpg" alt="image"><span
+                                <div class="profile"><img src="{{ url('admin/images/faces/face2.jpg') }}" alt="image"><span
                                         class="offline"></span></div>
                                 <div class="info">
                                     <div class="wrapper d-flex">
@@ -173,7 +173,7 @@
                                 <small class="text-muted my-auto">23 min</small>
                             </li>
                             <li class="list">
-                                <div class="profile"><img src="images/faces/face3.jpg" alt="image"><span
+                                <div class="profile"><img src="{{ url('admin/images/faces/face3.jpg') }}" alt="image"><span
                                         class="online"></span></div>
                                 <div class="info">
                                     <p>Daniel Russell</p>
@@ -182,7 +182,7 @@
                                 <small class="text-muted my-auto">14 min</small>
                             </li>
                             <li class="list">
-                                <div class="profile"><img src="images/faces/face4.jpg" alt="image"><span
+                                <div class="profile"><img src="{{ url('admin/images/faces/face4.jpg') }}" alt="image"><span
                                         class="offline"></span></div>
                                 <div class="info">
                                     <p>James Richardson</p>
@@ -191,7 +191,7 @@
                                 <small class="text-muted my-auto">2 min</small>
                             </li>
                             <li class="list">
-                                <div class="profile"><img src="images/faces/face5.jpg" alt="image"><span
+                                <div class="profile"><img src="{{ url('admin/images/faces/face5.jpg') }}" alt="image"><span
                                         class="online"></span></div>
                                 <div class="info">
                                     <p>Madeline Kennedy</p>
@@ -200,7 +200,7 @@
                                 <small class="text-muted my-auto">5 min</small>
                             </li>
                             <li class="list">
-                                <div class="profile"><img src="images/faces/face6.jpg" alt="image"><span
+                                <div class="profile"><img src="{{ url('admin/images/faces/face6.jpg') }}" alt="image"><span
                                         class="online"></span></div>
                                 <div class="info">
                                     <p>Sarah Graves</p>
@@ -225,25 +225,25 @@
     <!-- container-scroller -->
 
     <!-- plugins:js -->
-    <script src="vendors/js/vendor.bundle.base.js"></script>
+    <script src="{{ url('admin/vendors/js/vendor.bundle.base.js') }}"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
-    <script src="vendors/chart.js/Chart.min.js"></script>
-    <script src="vendors/datatables.net/jquery.dataTables.js"></script>
-    <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
-    <script src="js/dataTables.select.min.js"></script>
+    <script src="{{ url('admin/vendors/chart.js/Chart.min.js') }}"></script>
+    <script src="{{ url('admin/vendors/datatables.net/jquery.dataTables.js') }}"></script>
+    <script src="{{ url('admin/vendors/datatables.net-bs4/dataTables.bootstrap4.js') }}"></script>
+    <script src="{{ url('admin/js/dataTables.select.min.js') }}"></script>
 
     <!-- End plugin js for this page -->
     <!-- inject:js -->
-    <script src="js/off-canvas.js"></script>
-    <script src="js/hoverable-collapse.js"></script>
-    <script src="js/template.js"></script>
-    <script src="js/settings.js"></script>
-    <script src="js/todolist.js"></script>
+    <script src="{{ url('admin/js/off-canvas.js') }}"></script>
+    <script src="{{ url('admin/js/hoverable-collapse.js') }}"></script>
+    <script src="{{ url('admin/js/template.js') }}"></script>
+    <script src="{{ url('admin/js/settings.js') }}"></script>
+    <script src="{{ url('admin/js/todolist.js') }}"></script>
     <!-- endinject -->
     <!-- Custom js for this page-->
-    <script src="js/dashboard.js"></script>
-    <script src="js/Chart.roundedBarCharts.js"></script>
+    <script src="{{ url('admin/js/dashboard.js') }}"></script>
+    <script src="{{ url('admin/js/Chart.roundedBarCharts.js') }}"></script>
     <!-- End custom js for this page-->
 </body>
 
